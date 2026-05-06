@@ -8,6 +8,12 @@ The system analyzes:
 
 The project combines machine learning models with a modern web application interface using FastAPI and React.
 
+# Demo Video
+
+Watch the project demonstration here:
+
+[Project Demo](demo/project-demo.mp4)
+
 ---
 
 # Features

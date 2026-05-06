@@ -42,7 +42,7 @@ def fix_state_dict(state_dict, prefix):
 def load_nih_model():
     model = models.densenet121(weights=None)
     model.classifier = nn.Linear(1024, 14)
-    checkpoint = torch.load("models/lung_nih.pth", map_location=torch.device("cpu"))
+    checkpoint = torch.load("../Model_Training/Lung/lung_nih.pth", map_location=torch.device("cpu"))
     if "model_state_dict" in checkpoint:
         state_dict = checkpoint["model_state_dict"]
     else:
@@ -55,7 +55,7 @@ def load_nih_model():
 def load_rsna_model():
     model = models.densenet121(weights=None)
     model.classifier = nn.Linear(1024, 1)
-    checkpoint = torch.load("models/lung_rsna.pth", map_location=torch.device("cpu"))
+    checkpoint = torch.load("../Model_Training/Lung/lung_rsna.pth", map_location=torch.device("cpu"))
     if "model_state_dict" in checkpoint:
         state_dict = checkpoint["model_state_dict"]
     else:

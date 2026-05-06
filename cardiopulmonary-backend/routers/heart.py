@@ -7,7 +7,7 @@ import io
 router = APIRouter()
 
 # Model load karo
-model = keras.models.load_model("models/heart_model.keras")
+model = keras.models.load_model("../Model_Training/Heart/heart_model.keras")
 
 # 3 classes - Yuvraj ki notebook se confirmed
 CLASS_NAMES = ['Abnormal Heartbeat', 'Myocardial Infarction', 'Normal']
